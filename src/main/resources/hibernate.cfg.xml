@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://192.168.99.100:32769/mall</property>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <mapping class="com.symagic.mail.model.MallBannerEntity"/>
+    <mapping class="com.symagic.mail.model.MallCategoryEntity"/>
+    <mapping class="com.symagic.mail.model.MallConfigEntity"/>
+    <mapping class="com.symagic.mail.model.MallCouponsEntity"/>
+    <mapping class="com.symagic.mail.model.MallGoodsEntity"/>
+    <mapping class="com.symagic.mail.model.MallNoticeEntity"/>
+    <mapping class="com.symagic.mail.model.MallAddressEntity"/>
+    <mapping class="com.symagic.mail.model.MallUsersEntity"/>
+    <mapping class="com.symagic.mail.model.MallWalletEntity"/>
+
+    <!-- <property name="connection.username"/> -->
+    <!-- <property name="connection.password"/> -->
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>

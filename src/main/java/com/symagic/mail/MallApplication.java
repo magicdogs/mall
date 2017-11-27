@@ -12,7 +12,7 @@ import org.springframework.web.filter.CorsFilter;
  * @author Administrator
  */
 @SpringBootApplication
-public class MallApplication { 
+public class MallApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MallApplication.class, args);
